@@ -147,7 +147,7 @@ Clone the repo and install dependencies:
 
 ```bash
 
-git  clone  <repository-url>
+git  clone  [wallet-service](https://github.com/Sachin-Yawalkar/wallet-service)
 
 cd  wallet-service
 
@@ -322,51 +322,6 @@ The `idempotentKey` is important - if you send the same key twice, you'll get th
   
 
 **Error Handling:** Inputs are validated, errors are descriptive, and all operations are atomic (either fully succeed or fully fail).
-
-  
-
-## Project Structure
-
-  
-
-```
-
-wallet-service/
-
-├── src/
-
-│ ├── config/
-
-│ │ └── dynamodbClient.ts
-
-│ ├── controllers/
-
-│ │ └── wallet.controller.ts
-
-│ ├── services/
-
-│ │ └── wallet.service.ts
-
-│ ├── routes/
-
-│ │ └── wallet.routes.ts
-
-│ ├── scripts/
-
-│ │ └── initTables.ts # Creates tables and seeds 10 users
-
-│ └── tests/
-
-│ └── wallet.service.test.ts
-
-├── docker-compose.yaml
-
-├── package.json
-
-└── tsconfig.json
-
-```
-
   
 
 ## API Reference
@@ -613,22 +568,8 @@ npm  test
 
 ```
 
-  
-
-## Resources
-
-  
-
-- [AWS SDK Docs](https://docs.aws.amazon.com/sdk-for-javascript/)
-
-- [DynamoDB Local Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
-
-- [DynamoDB Transactions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html)
-
-  
 
 ## Extra
-
   
 
 - For detailed API usage and interactive documentation, use 📚 Swagger UI: [http://localhost:3000/docs](http://localhost:3000/docs) or see [CURL_COMMANDS.md](./CURL_COMMANDS.md)
