@@ -147,7 +147,7 @@ Clone the repo and install dependencies:
 
 ```bash
 
-git  clone  [wallet-service](https://github.com/Sachin-Yawalkar/wallet-service)
+git clone https://github.com/Sachin-Yawalkar/wallet-service.git
 
 cd  wallet-service
 
